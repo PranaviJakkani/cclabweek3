@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+
+    /* Common properties for all divs */
+    #id1, #id2, #id3, #id4 {
+        height: 400px;
+        width: auto;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    /* 1. Relative Position */
+    #id1 {
+        background-color: aqua;
+        position: relative;
+        /* top: 200px; */
+    }
+
+    /* 2. Static Position - default position */
+    #id2 {
+        background-color: burlywood;
+        position: static;
+        /* top: 100px;  <-- doesn't work with static */
+    }
+
+    /* 3. Sticky Position */
+    #id3 {
+        background-color: rgb(164, 123, 202);
+        position: sticky;
+        top: 10px;
+    }
+
+    /* 4. Fixed Position */
+    #id4 {
+        background-color: hotpink;
+        position: fixed;
+        top: 200px;
+    }
+
+</style>
+</head>
+<body>
+    <div id="id1">Hello</div>
+     <div id="id2">Welcome
+
+      <div id="id3">FSD LAB</div></div>
+       <div id="id4">Hii</div>
+</body>
+</html>
